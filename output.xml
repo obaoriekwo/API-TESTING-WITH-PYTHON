@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20221005 19:51:06.621" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 001 Get Request" source="C:\Users\dtyjdtyjdyt\PycharmProjects\pythonProject1\TC_001_Get_Request.robot">
+<test id="s1-t1" name="TC_001_GET_Request" line="8">
+<kw name="create session">
+<arg>Get_Student_Details</arg>
+<arg>${Base_URL}</arg>
+<msg timestamp="20221005 19:51:06.679" level="FAIL">No keyword with name 'create session' found.</msg>
+<status status="FAIL" starttime="20221005 19:51:06.678" endtime="20221005 19:51:06.679"/>
+</kw>
+<kw name="${response}= get request">
+<arg>Get_Student_Details</arg>
+<arg>api/studentsDetails</arg>
+<status status="NOT RUN" starttime="20221005 19:51:06.682" endtime="20221005 19:51:06.683"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221005 19:51:06.683" endtime="20221005 19:51:06.683"/>
+</kw>
+<status status="FAIL" starttime="20221005 19:51:06.676" endtime="20221005 19:51:06.685">No keyword with name 'create session' found.</status>
+</test>
+<status status="FAIL" starttime="20221005 19:51:06.626" endtime="20221005 19:51:06.688"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC 001 Get Request">TC 001 Get Request</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221005 19:51:06.672" level="ERROR">Error in file 'C:\Users\dtyjdtyjdyt\PycharmProjects\pythonProject1\TC_001_Get_Request.robot' on line 2: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\dtyjdtyjdyt\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
+  C:\Users\dtyjdtyjdyt\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\dtyjdtyjdyt\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\dtyjdtyjdyt\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\dtyjdtyjdyt\AppData\Local\Programs\Python\Python310
+  C:\Users\dtyjdtyjdyt\AppData\Local\Programs\Python\Python310\lib\site-packages</msg>
+</errors>
+</robot>
